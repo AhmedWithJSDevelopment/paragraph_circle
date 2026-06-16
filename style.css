@@ -206,7 +206,7 @@ section p{
         line-height: 1.7;
     }
 }
-@media (max-width: 300px) {
+/* @media (max-width: 300px) {
     section{
 
         position: relative;
@@ -275,7 +275,7 @@ section p{
     section p{
     
         color: aliceblue;
-    }
+    } */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
