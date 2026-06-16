@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=poppins:400,500,600,700,800&display=swarp');
+/* @import url('https://fonts.googleapis.com/css?family=poppins:400,500,600,700,800&display=swarp');
 
 *{
 padding: 0;
@@ -88,11 +88,11 @@ section p{
      line-height: 1.8;
     text-align: justify;
     font-size: 1rem;
-}
+} */
 
 
 /* Responsive للتابلت والموبايل */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 
     section{
         padding: 15px;
@@ -122,10 +122,10 @@ section p{
         font-size: 15px;
         line-height: 1.8;
     }
-}
+} */
 
 /* للأجهزة الصغيرة جداً */
-@media (max-width: 480px){
+/* @media (max-width: 480px){
 
     .circle.circle1,
     .circle.circle2,
@@ -147,7 +147,7 @@ section p{
     section a h2{
         font-size: 1.5rem;
     }
-}
+} */
 
 
 
@@ -222,7 +222,119 @@ section p{
         color: aliceblue;
     } */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.title-link{
+    text-decoration:none;
+}
+
+.title-link h1{
+    color:white;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:clamp(2rem,5vw,3.5rem);
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.circle{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    overflow:hidden;
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,.15);
+
+    transition:.4s;
+}
+
+.circle:hover{
+    transform:scale(1.05);
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.content{
+    max-width:1000px;
+    margin:auto;
+}
+
+.content p{
+    font-size:1rem;
+    line-height:1.9;
+    text-align:justify;
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+    .gallery{
+        gap:20px;
+    }
+
+    .circle{
+        width:200px;
+        height:200px;
+    }
+
+    .content p{
+        font-size:15px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+    .gallery{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .circle{
+        width:180px;
+        height:180px;
+    }
+
+    .container{
+        padding:20px 15px;
+    }
+
+    .content p{
+        font-size:14px;
+        line-height:1.8;
+    }
+}
 
 
 
