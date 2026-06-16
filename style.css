@@ -35,7 +35,7 @@ object-fit: cover;
 
 
 }
-.circle.circle1{
+/* .circle.circle1{
     width: 500px;
     height: 500px;
     float: left;
@@ -68,7 +68,7 @@ object-fit: cover;
     margin: 20px;   
     shape-outside: circle();
 
-}
+} */
 .circle.circle1{
     width: min(45vw, 500px);
     height: min(45vw, 500px);
