@@ -13,10 +13,12 @@ body{
 
 }
 section{
-
+     max-width: 1200px;
     position: relative;
     width: 100%;
     padding: 50px;
+    padding: 30px;
+
 }
 .circle{
     position: relative;
@@ -75,17 +77,81 @@ section a h2,section p{
 }
 section a h2{
     text-decoration: none;
-font-size: 2em;margin-bottom: 10px;}
+     font-size: 2em;
+     margin-bottom: 10px;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 20px;
+}
 section p{
 
     color: aliceblue;
+     line-height: 1.8;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+
+/* Responsive للتابلت والموبايل */
+@media (max-width: 768px){
+
+    section{
+        padding: 15px;
+    }
+
+    .circle.circle1,
+    .circle.circle2,
+    .circle.circle3,
+    .circle.circle4{
+
+        float: none;
+        display: block;
+
+        width: 220px;
+        height: 220px;
+
+        margin: 20px auto;
+        shape-outside: none;
+    }
+
+    section a h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    section p{
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+/* للأجهزة الصغيرة جداً */
+@media (max-width: 480px){
+
+    .circle.circle1,
+    .circle.circle2,
+    .circle.circle3,
+    .circle.circle4{
+
+        width: 170px;
+        height: 170px;
+    }
+
+    section{
+        padding: 10px;
+    }
+
+    section p{
+        font-size: 14px;
+    }
+
+    section a h2{
+        font-size: 1.5rem;
+    }
 }
 
 
 
-
-
-@media (max-width: 300px) {
+/* @media (max-width: 300px) {
     section{
 
         position: relative;
@@ -154,7 +220,7 @@ section p{
     section p{
     
         color: aliceblue;
-    }
+    } */
 
 
 
